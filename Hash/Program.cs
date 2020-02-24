@@ -11,7 +11,7 @@ namespace Hash
     {
         static void Main(string[] args)
         {
-            string curFileName = "a_example";
+            string curFileName = "e_so_many_books";
             Data mainData = ReadData($"../../../Input/{curFileName}.txt");
             List<Day> days = new List<Day>();
             mainData.Books = mainData.Books.OrderByDescending(b => b.Score).ToList();
